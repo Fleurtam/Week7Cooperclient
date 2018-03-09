@@ -17,12 +17,15 @@ export class PersonProvider {
   public age: number;
   public assessmentMessage: string;
 
+
   constructor(private cooper: CooperProvider){}
 
   doAssessment(distance: number): void {
     this.assessmentMessage = this.cooper.assess(this, distance);
 
-  constructor(public http: HttpClient) {
-    console.log('Hello PersonProvider Provider');
-  }
+//  constructor(public http: HttpClient) {
+//      console.log('Hello PersonProvider Provider');
+
+//
+}
 }
