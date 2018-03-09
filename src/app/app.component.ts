@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 @Component({
   templateUrl: 'app.html'
 })
+
+
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
@@ -26,6 +29,7 @@ export class MyApp {
     ];
 
   }
+
 
   initializeApp() {
     this.platform.ready().then(() => {
