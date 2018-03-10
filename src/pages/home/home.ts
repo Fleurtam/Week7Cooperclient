@@ -41,4 +41,6 @@ export class HomePage {
   showResults() {
     this.modalCtrl.create(ResultsPage).present();
   }
+
+  
 }

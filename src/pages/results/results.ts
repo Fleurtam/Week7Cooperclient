@@ -13,12 +13,23 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'results.html',
 })
 export class ResultsPage {
+  results = [];
+  constructor(
+    private perfomanceData: PerformanceDataProvider,
+    public navCtrl: NavController,
+    public navParams: NavParams
+  ) {}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+
+  // )
+  // (public navCtrl: NavController, public navParams: NavParams) {
+  // }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultsPage');
-  }
+    this.perfomanceData
+         .getResults()
+         .subscribe(data => (this.results = data.entries));
+     }
 
-}
+    // console.log('ionViewDidLoad ResultsPage');
+  }
