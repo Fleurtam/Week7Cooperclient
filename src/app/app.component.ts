@@ -5,7 +5,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 // import { ListPage } from '../pages/list/list';
 import { Angular2TokenService } from 'angular2-token';
-// import { PerfomanceDataProvider } from '../../providers/perfomance-data/perfomance-data';
+import { ResultsPage } from '../pages/results/results';
+
+// import { PerformanceDataProvider } from '../../providers/performance-data/performance-data';
 
 
 @Component({

@@ -13,23 +13,30 @@ import { CooperProvider } from '../providers/cooper/cooper';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { Angular2TokenService } from 'angular2-token';
-import { PerfomanceDataProvider } from '../providers/perfomance-data/perfomance-data';
+import { PerformanceDataProvider } from '../providers/performance-data/performance-data';
+import { ChartsModule } from 'ng2-charts';
+import { ResultsPage } from '../pages/results/results';
+
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    ResultsPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule,
     IonicModule.forRoot(MyApp),
+    ChartsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
+    ResultsPage
   ],
   providers: [
     StatusBar,
@@ -38,7 +45,7 @@ import { PerfomanceDataProvider } from '../providers/perfomance-data/perfomance-
     PersonProvider,
     CooperProvider,
     Angular2TokenService,
-    PerfomanceDataProvider
+    PerformanceDataProvider
   ]
 })
 export class AppModule {}
